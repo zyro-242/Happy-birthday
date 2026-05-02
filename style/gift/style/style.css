@@ -2036,9 +2036,9 @@ button:hover {
 /* Responsive Adjustments */
 @media (max-width: 600px) {
   .flowers {
-    transform: scale(0.9); /* Tăng kích thước từ 0.6 lên 0.9 */
+    transform: scale(1.4); /* Phóng to mạnh hơn: từ 0.9 lên 1.4 */
     transform-origin: bottom center;
-    bottom: 12vh;
+    bottom: 10vh; /* Hạ thấp xuống một chút để cân đối */
     position: relative;
   }
 
