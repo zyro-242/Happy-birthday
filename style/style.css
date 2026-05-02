@@ -1848,6 +1848,137 @@ body::before {
   height: 100%;
 }
 
+/* ============================================================
+   RESPONSIVE FIXES FOR MOBILE
+   ============================================================ */
+
+@media (max-width: 600px) {
+  /* 1. Modal Widths - Force all modals to fit mobile screen */
+  .cake-modal,
+  .image-modal,
+  .letter-modal,
+  .music-modal,
+  .gift-modal {
+    width: 94% !important;
+    max-width: none !important;
+    padding: 25px 15px 20px !important;
+    border-radius: 24px !important;
+    gap: 12px !important;
+  }
+
+  /* 2. Birthday Cake Scaling - Shrink cake to fit mobile height */
+  .cake-scene {
+    height: 260px !important; 
+    margin: 5px 0 !important;
+  }
+  .cake-css {
+    transform: scale(0.7) !important;
+    margin-top: -10px !important;
+  }
+
+  /* 3. Header Texts - Shrink fonts */
+  .hbd-happy {
+    font-size: 2.2rem !important;
+  }
+  .hbd-birthday {
+    font-size: 1.5rem !important;
+  }
+  .stats-header h2 {
+    font-size: 1.3rem !important;
+  }
+  .stats-header p {
+    font-size: 0.75rem !important;
+  }
+
+  /* 4. Menu Adjustments */
+  .cake-menu-btn {
+    padding: 1.5rem 1rem !important;
+  }
+  .cake-menu-btn .icon span {
+    font-size: 2.5rem !important;
+  }
+  .menu {
+    gap: 1.2rem !important;
+    padding: 1rem 0 !important;
+  }
+
+  /* 5. Numpad & Lock Screen for small screens */
+  .num-btn {
+    width: 65px !important;
+    height: 65px !important;
+    font-size: 1.4rem !important;
+  }
+  .numpad {
+    gap: 15px !important;
+  }
+  .pass-dots {
+    margin-bottom: 20px !important;
+    gap: 10px !important;
+  }
+  .lock-image img {
+    width: 130px !important;
+  }
+  .lock-content {
+    width: 90% !important;
+  }
+
+  /* 6. Decoration Control - Hide cluttering elements on mobile */
+  .heart {
+    display: none !important; 
+  }
+  .gallery-gif-wrapper,
+  .music-gif, 
+  .letter-gif {
+    display: none !important;
+  }
+
+  /* 7. Balloons & Sparkles Adjustments */
+  .cake-balloon {
+    width: 40px !important;
+    height: 50px !important;
+    --spd: 5s !important; /* Slow down bobbing slightly */
+  }
+  .cake-sparkle {
+    font-size: 1.1rem !important;
+  }
+  .cake-bunting {
+    height: 40px !important;
+  }
+  
+  /* 8. Stats cards padding */
+  .stat-card {
+    padding: 16px !important;
+    border-radius: 20px !important;
+  }
+  .stat-value {
+    font-size: 1.2rem !important;
+  }
+  .stat-label {
+    font-size: 0.7rem !important;
+  }
+  
+  /* 9. Controls */
+  .cake-controls {
+    min-height: 70px !important;
+  }
+  .wish-text {
+    font-size: 0.95rem !important;
+    padding: 12px !important;
+  }
+}
+
+/* For very small screens (iPhone 5/SE type) */
+@media (max-width: 380px) {
+  .num-btn {
+    width: 55px !important;
+    height: 55px !important;
+  }
+  .hbd-happy { font-size: 2rem !important; }
+  .cake-scene { height: 220px !important; }
+  .cake-css { transform: scale(0.6) !important; }
+}
+
+
 
 
 
