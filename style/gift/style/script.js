@@ -56,7 +56,7 @@ function createFallingImage() {
         img.className = "falling-image";
 
         const width = window.innerWidth;
-        const size = width < 600 ? Math.random() * 40 + 50 : Math.random() * 60 + 60;
+        const size = width < 600 ? Math.random() * 20 + 40 : Math.random() * 60 + 60; // Giảm size trên mobile: 40-60px thay vì 50-90px
         const startX = Math.random() * (width - size);
         const duration = Math.random() * 4 + 4;
 
@@ -93,7 +93,7 @@ function createFallingMessage() {
         const padding = 20;
         const startX = Math.random() * (width - 180 - padding * 2) + padding;
         const duration = Math.random() * 5 + 5;
-        const fontSize = width < 600 ? Math.random() * 4 + 14 : Math.random() * 6 + 16;
+        const fontSize = width < 600 ? Math.random() * 3 + 13 : Math.random() * 6 + 16; // Giảm font size: 13-16px thay vì 14-18px
 
         msgDiv.style.left = Math.max(padding, startX) + "px";
         msgDiv.style.fontSize = fontSize + "px";

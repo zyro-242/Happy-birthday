@@ -66,25 +66,29 @@ p {
   perspective: 1000px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .menu {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.2rem !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+    width: 100% !important;
   }
 
   .menu-item {
-    padding: 1rem 1rem;
-    font-size: 1rem;
-    border-radius: 1.5rem;
+    padding: 1.5rem 1rem !important;
+    font-size: 1rem !important;
+    border-radius: 1.5rem !important;
     animation: none !important;
     transform: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
   }
 
-  .menu-item .icon img {
-    width: 40px;
-    height: 40px;
+  .menu-item .icon img,
+  .menu-item .icon i {
+    width: 55px !important;
+    height: 55px !important;
   }
 }
 
